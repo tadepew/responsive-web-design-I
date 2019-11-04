@@ -1,3 +1,4 @@
+
 /* Use your own code or past solution for Great Idea Web Page CSS here! */
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
@@ -72,7 +73,8 @@ h1, h2, h3, h4, h5 {
 	margin-top: 2%;
 }
 
-/*navigation*/
+/* Navigation */
+
 nav{
 	display: flex;
 	justify-content: space-between;
@@ -90,72 +92,89 @@ nav{
 	color: grey;
 }
 
-
-.header{
-	margin-top: 5%;
-	margin-bottom: 5%;
-	display: flex;
-	justify-content: space-evenly;
-	text-align: center;
-	align-items: center;
+.services-header-img {
+    margin-top:2%;
+    margin-bottom:4%;
+    width: 100%;
 }
 
-.logo-and-button {
-	display: flex;
-	flex-direction: column;
+/* Services box */
+
+h1 {
+    font-size: 30px;
+}
+.services {
+    margin-bottom: 4%;
+}
+.services > p {
+    font-size:15px;
+    line-height: 20px;
 }
 
-h1{
-	font-size: 5rem;
-	text-align: center;
-	line-height:1;
-}
+/*Boxes*/
 
-#button{
-	margin: 0 auto;
-	padding:3% 0 5% 0;
+.row-one {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom:4%;
+    margin-top: 4%;
+
+}
+.row-two {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom:4%;
+}
+.row-three {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom:4%;
+}
+.box {
+    line-height: 20px;
+    padding: 20px;
+    background-color: rgb(238, 238, 238);
+    font-size:15px;
+    border: 1px solid black;
+    width: 48%;
+}
+.button {
+	padding:1.5% 0 5% 0;
 	height: 35px;
-	width: 130px;
-	border: 1px solid grey;
-	text-align: center;
-}
-
-
-.middle-img {
-	display: block;
-	margin-left: auto;
-	margin-right: auto;
-	width: 87%;
-}
-
-.sectionclass1 {
-	display: flex;
-	justify-content: space-between;
-}
-
-.div1{
-	width: 45%;
-	margin: 5% 1.5%;
-	padding: 0 5%;
-	font-size: 1rem;
-}
-
-.sectionclass2{
-	display: flex;
-	justify-content: space-between;
-}
-
-.div2{
-	width: 35%;
-	margin: 5% 0 5% 1.5%;
-	padding: 0 5%;
-	font-size: 1rem;
-}
-
-.contact{
-	height: 100px;
 	width: 150px;
-	margin: 5% 0 0 6.5%;
+	border: 1px solid black;
+    text-align: center;
+    border-radius: 5px;
+    position: relative;
+    margin-top: 20px;
+    margin-left: 2px;
+    margin-bottom: 2px;
+    background-color: white;
+}
+
+/*Last row*/
+
+.bottom-row {
+    display:flex;
+    justify-content: space-between;
+}
+.left-box {
+    width: 48%;
+    font-size:15px;
+    line-height:20px;
+}
+.right-box {
+    width: 48%
+}
+.services-info-img {
+    max-width: 100%;
+    height: auto;
+  }
+h3 {
+    font-size: 20px;
+}
+ul {
+    margin-left: 4%;
 }
 
 footer{
@@ -164,8 +183,9 @@ footer{
 	text-align: center;
 }
 
+
 @media (max-width: 800px){
-	.container {
+    .container {
 		width: 95%;
 	}
 	nav {
@@ -181,43 +201,11 @@ footer{
 		margin: 2% 1%;
 	}
 	.logo {
-		margin: 2% 0;
-	}
-	.roundimg {
-		display: none;
-	}
-	.div1 {
-		width: 49%;
-		padding: 0 1%;
-	}
-	.div1 p {
-		font-size: 1rem;
-	}
-	.middle-img {
-		width: 95%;
-	}
-	.div2{
-		width: 35%;
-		margin: 5% 0 5% 1.5%;
-		padding: 0 1%;
-	}
-	.div2 p {
-		font-size: 1rem;
-	}
-	hr {
-		width: 95%;
-	}
-	.contact{
-		margin: 5% 0 0 2%;
-		font-size: 1rem;
-	}
-	.footer{
-		font-size: 1rem;
-	}
+        margin: 2% 0;
+    }
 }
-
 @media (max-width: 500px){
-	.container {
+    .container {
 		width: 100%;
 	}
 	.links{
@@ -233,26 +221,34 @@ footer{
 		border-bottom: 1px solid grey;
 	}
 	.logo {
-		margin-bottom: 4%;
-	}
-	h1 {
-		font-size: 5rem;
-	}
-	.logo-and-button {
-		padding: 4% 4%;
-	}
-	.sectionclass1 {
-		flex-direction: column;
-		margin-bottom: 3%;
-	}
-	.div1 {
-		margin-bottom: 2%;
-		width: 90%;
-	}
-	.sectionclass2 {
-		flex-direction:column;
-	}
-	.div2 {
-		width: 90%;
-	}
+        margin-bottom: 4%;
+    }
+    .services-header-img {
+        display:none;
+    }
+    .services h1{
+        padding-top: 4%;
+        text-align:center;
+    }
+    .services hr {
+        display:none;
+    }
+    .services {
+        margin: 0 2%;
+    }
+    .right-box {
+        display:none;
+    }
+    .left-box {
+        width: 100%;
+        padding: 4%;
+    }
+    .left-box h3 {
+        text-align: center;
+    }
+    ul {
+        text-align:center;
+        list-style-position: inside;
+        margin: 0 auto;
+    }
 }
