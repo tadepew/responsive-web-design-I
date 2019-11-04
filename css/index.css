@@ -106,7 +106,7 @@ nav{
 }
 
 h1{
-	font-size: 75px;
+	font-size: 5rem;
 	text-align: center;
 	line-height:1;
 }
@@ -136,8 +136,8 @@ h1{
 .div1{
 	width: 45%;
 	margin: 5% 1.5%;
-	padding:0 5%;
-	font-size: 15px;
+	padding: 0 5%;
+	font-size: 1rem;
 }
 
 .sectionclass2{
@@ -149,7 +149,7 @@ h1{
 	width: 35%;
 	margin: 5% 0 5% 1.5%;
 	padding: 0 5%;
-	font-size: 15px;
+	font-size: 1rem;
 }
 
 .contact{
@@ -184,14 +184,14 @@ footer{
 		margin: 2% 0;
 	}
 	.roundimg {
-		display:none;
+		display: none;
 	}
 	.div1 {
-		width:49%;
+		width: 49%;
 		padding: 0 1%;
 	}
 	.div1 p {
-		font-size:1rem;
+		font-size: 1rem;
 	}
 	.middle-img {
 		width: 95%;
@@ -202,17 +202,17 @@ footer{
 		padding: 0 1%;
 	}
 	.div2 p {
-		font-size:1rem;
+		font-size: 1rem;
 	}
 	hr {
 		width: 95%;
 	}
 	.contact{
 		margin: 5% 0 0 2%;
-		font-size:1rem;
+		font-size: 1rem;
 	}
 	.footer{
-		font-size:1rem;
+		font-size: 1rem;
 	}
 }
 
@@ -236,13 +236,13 @@ footer{
 		margin-bottom: 4%;
 	}
 	h1 {
-		font-size:5rem;
+		font-size: 5rem;
 	}
 	.logo-and-button {
 		padding: 4% 4%;
 	}
 	.sectionclass1 {
-		flex-direction:column;
+		flex-direction: column;
 		margin-bottom: 3%;
 	}
 	.div1 {
