@@ -1,0 +1,254 @@
+
+/* Use your own code or past solution for Great Idea Web Page CSS here! */
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1.2;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* Set every element's box-sizing to border-box */
+* {
+	box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+    font-family: 'Titillium Web', sans-serif;
+}
+
+h1, h2, h3, h4, h5 {
+    font-family: 'Bangers', cursive;
+    letter-spacing: 1px;
+    margin-bottom: 15px;
+}
+
+/* Copy and paste your work from yesterday here and start to refactor into flexbox */
+
+.container{
+	width: 90%;
+	margin: 0 auto;
+	margin-top: 2%;
+}
+
+/* Navigation */
+
+nav{
+	display: flex;
+	justify-content: space-between;
+	align-items:center;
+}
+.links {
+	display:flex;
+	width: 70%;
+	justify-content:space-between;
+	align-items:center;
+}
+
+.links a{
+	text-decoration:none;
+	color: grey;
+}
+
+.services-header-img {
+    margin-top:2%;
+    margin-bottom:4%;
+    width: 100%;
+}
+
+/* Services box */
+
+h1 {
+    font-size: 30px;
+}
+.services {
+    margin-bottom: 4%;
+}
+.services > p {
+    font-size:15px;
+    line-height: 20px;
+}
+
+/*Boxes*/
+
+.row-one {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom:4%;
+    margin-top: 4%;
+
+}
+.row-two {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom:4%;
+}
+.row-three {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom:4%;
+}
+.box {
+    line-height: 20px;
+    padding: 20px;
+    background-color: rgb(238, 238, 238);
+    font-size:15px;
+    border: 1px solid black;
+    width: 48%;
+}
+.button {
+	padding:1.5% 0 5% 0;
+	height: 35px;
+	width: 150px;
+	border: 1px solid black;
+    text-align: center;
+    border-radius: 5px;
+    position: relative;
+    margin-top: 20px;
+    margin-left: 2px;
+    margin-bottom: 2px;
+    background-color: white;
+}
+
+/*Last row*/
+
+.bottom-row {
+    display:flex;
+    justify-content: space-between;
+}
+.left-box {
+    width: 48%;
+    font-size:15px;
+    line-height:20px;
+}
+.right-box {
+    width: 48%
+}
+.services-info-img {
+    max-width: 100%;
+    height: auto;
+  }
+h3 {
+    font-size: 20px;
+}
+ul {
+    margin-left: 4%;
+}
+
+footer{
+	margin-top: 10%;
+	margin-bottom: 10%;
+	text-align: center;
+}
+
+
+@media (max-width: 800px){
+    .container {
+		width: 95%;
+	}
+	nav {
+		flex-direction: column-reverse;
+	}
+	.links{
+		text-align: center;
+		width: 100%;
+		font-size: 1rem;
+	}
+	.links a {
+		padding: 2% 1%;
+		margin: 2% 1%;
+	}
+	.logo {
+        margin: 2% 0;
+    }
+}
+@media (max-width: 500px){
+    .container {
+		width: 100%;
+	}
+	.links{
+		flex-direction: column;
+		text-align: center;
+		border-top: 1px solid grey;
+		font-size: 1rem;
+	}
+	.links a {
+		width: 100%;
+		padding: 5% 0;
+		margin: 0 0;
+		border-bottom: 1px solid grey;
+	}
+	.logo {
+        margin-bottom: 4%;
+    }
+    .services-header-img {
+        display:none;
+    }
+    .services h1{
+        padding-top: 4%;
+        text-align:center;
+    }
+    .services hr {
+        display:none;
+    }
+    .services {
+        margin: 0 2%;
+    }
+    .right-box {
+        display:none;
+    }
+    .left-box {
+        width: 100%;
+        padding: 4%;
+    }
+    .left-box h3 {
+        text-align: center;
+    }
+    ul {
+        text-align:center;
+        list-style-position: inside;
+        margin: 0 auto;
+    }
+}
